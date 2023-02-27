@@ -9,6 +9,10 @@
   overflow: scroll;
 }
 
+.small {
+  display: none;
+}
+
 .navTop {
   width: 100%;
   height: 40px;
@@ -42,4 +46,22 @@
 
 .linksContainer > *:hover {
   color: rgb(42, 42, 42);
+}
+
+@media only screen and (max-width: 900px) {
+  .navContainer {
+    font-size: 0.8rem;
+    height: 33px;
+  }
+  .navTop {
+    font-size: 0.8rem;
+    height: 25px;
+  }
+  .big {
+    display: none;
+  }
+
+  .small {
+    display: initial;
+  }
 }

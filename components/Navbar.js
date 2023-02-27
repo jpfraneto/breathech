@@ -9,11 +9,12 @@ const Navbar = () => {
       <div className={styles.navTop}>
         <div className={styles.leftNavTop}></div>
         <div className={styles.rightNavTop}>
-          <p>From 🇨🇱 with ♡ | +569 85491126 | jpfraneto@gmail.com</p>
+          <p>From 🇨🇱 with ♡ | +56985491126 | jpfraneto@gmail.com</p>
         </div>
       </div>
       <div className={styles.navContainer}>
-        <div>Jorge Pablo Franetovic Stocker</div>
+        <div className={styles.big}>Jorge Pablo Franetovic Stocker</div>
+        <div className={styles.small}>JPFS</div>
         <div className={styles.linksContainer}>
           <Link href='/'>Home</Link>
           <Link href='/about'>About</Link>

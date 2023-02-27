@@ -62,7 +62,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .individualBenefit {
@@ -131,6 +131,10 @@
 
   .rightContainer {
     display: hidden;
+  }
+
+  .benefitsContainer {
+    align-items: center;
   }
 
   .benefitsContainer {
