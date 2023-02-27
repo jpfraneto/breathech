@@ -1,0 +1,44 @@
+.navContainer {
+  width: 100%;
+  height: 40px;
+  background-color: rebeccapurple;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navTop {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialsIcons {
+  background-color: white;
+  height: 100%;
+  width: 40px;
+}
+
+.rightNavTop {
+  display: flex;
+}
+.rightNavTop > * {
+  margin: 0 8px;
+}
+
+.linksContainer {
+  display: flex;
+}
+
+.linksContainer > * {
+  margin: 0 8px;
+}
+
+.linksContainer > *:hover {
+  color: rgb(42, 42, 42);
+}

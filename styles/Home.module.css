@@ -1,129 +1,143 @@
-.container {
-  padding: 0 2rem;
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.firstElement {
+  min-height: calc(100vh - 80px);
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+}
+
+.firstElement > * {
+  width: 50%;
+}
+
+.leftContainer {
+  background-color: rgb(205, 205, 205);
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.leftContainer h1 {
+  font-size: 3rem;
+  margin: 0;
+  transform: translate(0, -80px);
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.leftContainer small {
+  margin: 0;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.rightContainer {
+  background: url('/images/land.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rebeccapurple;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.secondElement {
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+.main h2 {
+  font-size: 3rem;
+  margin: 20px;
   text-decoration: underline;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.benefitsContainer {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  justify-content: center;
+  align-items: center;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.individualBenefit {
+  background-color: rebeccapurple;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 30%;
+  min-width: 360px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.individualTestimony {
+  background-color: black;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 30%;
+  min-width: 360px;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.main h3 {
+  font-size: 1.7rem;
+  margin: 10px;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.benefitImageContainer {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 40px;
+  overflow: hidden;
+  width: 80%;
+  height: 333px;
+  border: solid black 2px;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.thirdElement {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rebeccapurple;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+.fourthElement {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.fourthElement p {
+  width: 90%;
+  max-width: 555px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .firstElement {
     flex-direction: column;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+  .firstElement > * {
+    width: 100%;
   }
-  .code {
-    background: #111;
+
+  .leftContainer {
+    height: 100vh;
   }
-  .logo img {
-    filter: invert(1);
+
+  .rightContainer {
+    display: hidden;
+  }
+
+  .benefitsContainer {
+    flex-direction: column;
+  }
+
+  .individualBenefit {
+    width: 90%;
   }
 }

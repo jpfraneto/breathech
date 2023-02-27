@@ -1,0 +1,11 @@
+.pageContainer {
+  width: 98%;
+  max-width: 555px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pageContainer h2 {
+  font-size: 3rem;
+  margin: 20px;
+}
